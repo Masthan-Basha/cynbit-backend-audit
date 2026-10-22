@@ -1,0 +1,8 @@
+flowchart LR
+  U[Browser] --> CDN[CDN / WAF]
+  CDN --> API[API Layer<br/>helmet, CORS, rate limit, validation]
+  API --> Q[(Queue)]
+  Q --> W[Worker]
+  W --> CRM[CRM / Email]
+  API --> DB[(Database)]
+  API --> LOG[Structured Logs]
