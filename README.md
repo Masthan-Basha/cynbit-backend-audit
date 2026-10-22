@@ -18,7 +18,6 @@ Passive, authorized backend review of Cynbit's publicly observable footprint, wi
 ```bash
 cd reference-implementation
 npm install
-cp .env.example .env
 npm test
 npm start
 ```
